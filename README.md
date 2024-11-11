@@ -94,7 +94,7 @@ x = layers.UpSampling2D((2, 2))(x)
 decoded = layers.Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 
 autoencoder = keras.Model(input_img, decoded)
-print("Name: A.Anbuselvam, Reg No: 212222240009")
+print("Name: BARATHRAJ B, Reg No: 212222230019")
 autoencoder.summary()
 
 autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
@@ -107,7 +107,7 @@ history=autoencoder.fit(x_train_noisy, x_train_scaled,
 decoded_imgs = autoencoder.predict(x_test_noisy)
 
 n = 10
-print('Name: A.ANBUSELVAM  Register Number: 212222240009   ')
+print('Name:BARATHRAJ B  Register Number: 212222230019   ')
 plt.figure(figsize=(20, 4))
 for i in range(1, n + 1):
     # Display original
